@@ -55,26 +55,26 @@
             overflow: hidden;
         }
         .word {
-            font-size: 24px;
+            font-size: 16px; /* Adjusted font size for mobile */
             position: absolute;
             transform: rotate(-15deg);
-            padding: 10px;
+            padding: 5px; /* Adjusted padding for mobile */
             color: #ff6347;
-            text-shadow: 2px 2px 0px #000, 4px 4px 0px #aaa;
+            text-shadow: 1px 1px 0px #000, 2px 2px 0px #aaa; /* Adjusted shadow for mobile */
             font-family: 'Comic Sans MS', 'Comic Sans', cursive;
             animation: slow-move 5s infinite alternate ease-in-out;
         }
         .center-emoji {
-            font-size: 100px;
+            font-size: 50px; /* Adjusted emoji size for mobile */
             position: absolute;
             animation: slow-move 5s infinite alternate ease-in-out;
         }
         @keyframes slow-move {
             0% {
-                transform: translateX(-20px);
+                transform: translateX(-10px); /* Adjusted movement distance for mobile */
             }
             100% {
-                transform: translateX(20px);
+                transform: translateX(10px); /* Adjusted movement distance for mobile */
             }
         }
         @media (max-width: 768px) {
@@ -98,10 +98,20 @@
                 height: calc(100vh - 60px);
             }
             .center-emoji {
-                font-size: 50px;
+                font-size: 30px; /* Adjusted emoji size for small screens */
             }
             .word {
-                font-size: 18px;
+                font-size: 14px; /* Adjusted font size for small screens */
+                padding: 3px; /* Adjusted padding for small screens */
+                text-shadow: 1px 1px 0px #000, 2px 2px 0px #aaa; /* Adjusted shadow for small screens */
+            }
+            @keyframes slow-move {
+                0% {
+                    transform: translateX(-5px); /* Adjusted movement distance for small screens */
+                }
+                100% {
+                    transform: translateX(5px); /* Adjusted movement distance for small screens */
+                }
             }
         }
     </style>
@@ -116,91 +126,6 @@
         <div class="word" style="top: 10%; left: 20%;">Fuck You</div>
         <div class="word" style="top: 30%; left: 50%;">Shithead</div>
         <!-- Other words omitted for brevity -->
-        <div class="word" style="top: 50%; left: 70%;">Asshole</div>
-        <div class="word" style="top: 70%; left: 30%;">Bitch</div>
-        <div class="word" style="top: 20%; left: 80%;">Bastard</div>
-        <div class="word" style="top: 60%; left: 10%;">Damn You</div>
-        <div class="word" style="top: 40%; left: 90%;">Douchebag</div>
-        <div class="word" style="top: 80%; left: 50%;">Craphead</div>
-        <div class="word" style="top: 25%; left: 15%;">Piss Off</div>
-        <div class="word" style="top: 55%; left: 75%;">Hell No</div>
-        <div class="word" style="top: 85%; left: 25%;">Wanker</div>
-        <div class="word" style="top: 35%; left: 65%;">Prick</div>
-        <div class="word" style="top: 15%; left: 35%;">Cunt</div>
-        <div class="word" style="top: 45%; left: 55%;">Slut</div>
-        <div class="word" style="top: 65%; left: 5%;">Bugger Off</div>
-        <div class="word" style="top: 75%; left: 95%;">Bollocks</div>
-        <div class="word" style="top: 5%; left: 45%;">Tosser</div>
-        <div class="word" style="top: 95%; left: 85%;">Twat</div>
-        <div class="word" style="top: 10%; left: 70%;">Dickhead</div>
-        <div class="word" style="top: 30%; left: 10%;">Arsehole</div>
-        <div class="word" style="top: 50%; left: 40%;">Knobhead</div>
-        <div class="word" style="top: 70%; left: 20%;">Bellend</div>
-        <div class="word" style="top: 20%; left: 60%;">Git</div>
-        <div class="word" style="top: 60%; left: 30%;">Pillock</div>
-        <div class="word" style="top: 40%; left: 80%;">Plonker</div>
-        <div class="word" style="top: 80%; left: 40%;">Prat</div>
-        <div class="word" style="top: 25%; left: 75%;">Scrote</div>
-        <div class="word" style="top: 55%; left: 35%;">Minger</div>
-        <div class="word" style="top: 85%; left: 15%;">Munter</div>
-        <div class="word" style="top: 15%; left: 20%;">Dumbass</div>
-        <div class="word" style="top: 35%; left: 50%;">Jerk</div>
-        <div class="word" style="top: 55%; left: 70%;">Loser</div>
-        <div class="word" style="top: 75%; left: 30%;">Scumbag</div>
-        <div class="word" style="top: 25%; left: 80%;">Weirdo</div>
-        <div class="word" style="top: 65%; left: 10%;">Freak</div>
-        <div class="word" style="top: 45%; left: 90%;">Nutcase</div>
-        <div class="word" style="top: 85%; left: 50%;">Asshat</div>
-        <div class="word" style="top: 20%; left: 15%;">Lowlife</div>
-        <div class="word" style="top: 40%; left: 75%;">Douche</div>
-        <div class="word" style="top: 60%; left: 25%;">Pissant</div>
-        <div class="word" style="top: 80%; left: 60%;">Moron</div>
-        <div class="word" style="top: 30%; left: 35%;">Idiot</div>
-        <div class="word" style="top: 50%; left: 15%;">Dunce</div>
-        <div class="word" style="top: 70%; left: 65%;">Twit</div>
-        <div class="word" style="top: 25%; left: 45%;">Nincompoop</div>
-        <div class="word" style="top: 45%; left: 25%;">Dope</div>
-        <div class="word" style="top: 65%; left: 85%;">Bozo</div>
-        <div class="word" style="top: 85%; left: 35%;">Wacko</div>
-        <div class="word" style="top: 15%; left: 55%;">Lunatic</div>
-        <div class="word" style="top: 35%; left: 15%;">Chump</div>
-        <div class="word" style="top: 55%; left: 95%;">Numbskull</div>
-        <div class="word" style="top: 75%; left: 40%;">Schmuck</div>
-        <div class="word" style="top: 25%; left: 65%;">Clown</div>
-        <div class="word" style="top: 45%; left: 5%;">Goofball</div>
-        <div class="word" style="top: 65%; left: 50%;">Dingbat</div>
-        <div class="word" style="top: 85%; left: 75%;">Blockhead</div>
-        <div class="word" style="top: 5%; left: 20%;">Bumbling Idiot</div>
-        <div class="word" style="top: 95%; left: 70%;">Dumbbell</div>
-        <div class="word" style="top: 10%; left: 40%;">Imbecile</div>
-        <div class="word" style="top: 30%; left: 70%;">Lunkhead</div>
-        <div class="word" style="top: 50%; left: 20%;">Jerkoff</div>
-        <div class="word" style="top: 70%; left: 40%;">Dipstick</div>
-        <div class="word" style="top: 20%; left: 50%;">Jerkface</div>
-        <div class="word" style="top: 40%; left: 30%;">Putz</div>
-        <div class="word" style="top: 60%; left: 90%;">Putts</div>
-        <div class="word" style="top: 80%; left: 10%;">Jackass</div>
-        <div class="word" style="top: 25%; left: 90%;">Ninny</div>
-        <div class="word" style="top: 45%; left: 70%;">Twithead</div>
-        <div class="word" style="top: 65%; left: 35%;">Boogerface</div>
-        <div class="word" style="top: 85%; left: 5%;">Fartknocker</div>
-        <div class="word" style="top: 35%; left: 85%;">Dipshit</div>
-        <div class="word" style="top: 55%; left: 45%;">Motherfucker</div>
-        <div class="word" style="top: 75%; left: 15%;">Shitfaced</div>
-        <div class="word" style="top: 95%; left: 55%;">Dickweed</div>
-        <div class="word" style="top: 5%; left: 65%;">Assclown</div>
-        <div class="word" style="top: 15%; left: 25%;">Cockknocker</div>
-        <div class="word" style="top: 35%; left: 95%;">Ballbuster</div>
-        <div class="word" style="top: 55%; left: 55%;">Farthead</div>
-        <div class="word" style="top: 75%; left: 5%;">Turdface</div>
-        <div class="word" style="top: 25%; left: 35%;">Buttface</div>
-        <div class="word" style="top: 45%; left: 95%;">Assface</div>
-        <div class="word" style="top: 65%; left: 75%;">Dicknose</div>
-        <div class="word" style="top: 85%; left: 95%;">Dillweed</div>
-        <div class="word" style="top: 10%; left: 75%;">Douchecanoe</div>
-        <div class="word" style="top: 30%; left: 85%;">Fuckface</div>
-        <div class="word" style="top: 50%; left: 25%;">Dickbag</div>
-        <div class="word" style="top: 70%; left: 85%;">Pussy</div>
     </div>
 </body>
 </html>
